@@ -7,18 +7,23 @@ Welcome to the **Cafeteria** project! This repository contains the source code a
 The Cafeteria project is designed to streamline and automate the operations of a cafeteria. It provides features for menu management, order processing, inventory tracking, and reporting.
 
 ## Features
+1. **User Authentication**
+    - Account creation functionality
+    - Login system with session management
+    
+2. **Order Management**
+    - Self-ordering capability
+    - Proxy ordering (ordering for others)
+    
+3. **Customer Support**
+    - Contact form accessible to all users
+    - Inquiry storage and management system
 
-- **Menu Management:** Add, update, and remove menu items.
-- **Order Processing:** Place and track customer orders.
-- **Inventory Management:** Monitor stock levels and receive alerts for low inventory.
-- **Reporting:** Generate sales and inventory reports.
-- **User Roles:** Support for admin and staff accounts.
 
 ## Technologies Used
 
-- Programming Language: _[Specify language, e.g., Python, JavaScript]_
-- Framework: _[Specify framework, e.g., Django, Express.js]_
-- Database: _[Specify database, e.g., PostgreSQL, MongoDB]_
+- Programming Language: php, html, css, js
+- Database: mysql
 
 ## Getting Started
 
@@ -40,9 +45,6 @@ The Cafeteria project is designed to streamline and automate the operations of a
     npm start
     ```
 
-## Contributing
-
-Contributions are welcome! Please open issues or submit pull requests for improvements.
 
 ## License
 
@@ -50,4 +52,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For questions or support, please contact [your.email@example.com](mailto:your.email@example.com).
+For questions or support, please contact [shaveenudayanga@gmail.com](mailto:shaveenudayanga@gmail.com)
