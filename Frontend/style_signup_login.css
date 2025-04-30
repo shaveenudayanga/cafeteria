@@ -1,0 +1,226 @@
+/* Background and body styling */
+body {
+    background: url(images/backgroundcoffee2.jpg) rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #907b7b;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive sidebar */
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* Centering the form */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 50px 20px;
+}
+
+/* Form container styling */
+.form-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease forwards;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+/* Title styling */
+.form-title {
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: popIn 1s ease forwards;
+}
+
+/* Form structure */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input group */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 1.2s ease forwards;
+}
+
+/* Labels */
+.input-group label {
+    color: #d4a373;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Input fields */
+.input-group input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Focus effect */
+.input-group input:focus {
+    outline: 2px solid #d4a373;
+}
+
+/* Submit button */
+.btn-submit {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #d4a373;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for button */
+.btn-submit:hover {
+    background-color: #b58350;
+    transform: scale(1.05);
+}
+
+/* Switch link (login/signup links) */
+.switch-link {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.switch-link a {
+    color: #d4a373;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+    background: #331a00;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 20px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-box {
+    flex: 1 1 220px;
+    margin: 20px;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+    color: #d4a373;
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.newsletter-form {
+    margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 8px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter-form button {
+    padding: 8px 15px;
+    background: #d4a373;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-size: 14px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom span {
+    color: #d4a373;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
